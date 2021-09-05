@@ -1,0 +1,64 @@
+<html>
+
+	<head>
+		<title>Magic Shop</title>
+		
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		
+		<div class="container">
+			<div class="navbar">
+				<img class="logo" src="images/logo.png">
+				<!--<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">GENRES</a></li>
+					<li><a href="#">FAVS</a></li>
+					<li><a href="#">CONNECT</a></li>
+				</ul>-->
+			</div>
+			
+			<div class="content">
+		
+				<div class="left-col">
+					<h1>THE <br>MAGIC SHOP<br> OF <br>MUSIC</h1>
+				</div>
+				
+				<div class="right-col">
+					<p>Click Here To Listen<br>
+					Smooth like Butter!!</p>
+					<img id="play" src="images/play.png">
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<audio id="mySong">
+				<source src="images/butter.mp3" type="audio/mpeg">
+		</audio>
+		
+		<script>
+			
+			var mysong = document.getElementById("mySong");
+			var icon = document.getElementById("play")
+			
+			play.onclick =  function(){
+				if(mysong.paused){
+					mysong.play();
+					play.src = "images/pause.png";
+				}else{
+					mysong.pause();
+					play.src = "images/play.png";
+				}
+			}
+			
+		</script>
+		
+		
+	</body>
+
+
+</html>
